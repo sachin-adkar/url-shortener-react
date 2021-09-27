@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useState } from "react";
-import { config } from "../configs";
+import { config } from "./src/configs";
 
 export const Home = () => {
     const [value, setValue] = useState('');
