@@ -1,4 +1,4 @@
-# ShortenURL (My first react APP)
+# ShortenURL
 
 Implemented sign in with Google and Url shortening functionality
 
