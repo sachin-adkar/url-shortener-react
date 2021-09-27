@@ -17,7 +17,7 @@ export const Home = () => {
 
     const shorten = async () => {
         try {
-            const response = await axios.post(`${config.url}/s/short`, { url: value }, {
+            const response = await axios.post(`${config.url}/short`, { url: value }, {
                 headers: {
                     'x-access-token': localStorage.getItem('accessToken')
                 }
