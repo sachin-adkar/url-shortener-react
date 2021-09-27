@@ -1,8 +1,12 @@
 import axios from "axios";
 import { useState } from "react";
 import { config } from "../configs";
+import { useHistory } from "react-router";
 
 export const Home = () => {
+
+    const history = useHistory();
+
     const [value, setValue] = useState('');
 
     const [shortUrl, setShortUrl] = useState('');
@@ -31,6 +35,7 @@ export const Home = () => {
                 localStorage.removeItem('accessToken');
                 localStorage.removeItem('refreshToken');
                 alert('Failed to authenticate, please login');
+                history.push('/login');
             }
             else {
                 alert('Failed to generate short URL');
